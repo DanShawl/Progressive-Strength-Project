@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Progressive Strength</title>
+  </head>
+  <body>
+    <!---------------------- Header ----------------------------->
+    <!-- 
+      Building a header / nav
+      1.  Use header tag with class/id
+      2.  Next, nav tag with nav class and container utility
+      3.  Inside nav:
+        - Logo + name wrapped in a tag
+        - nav menu div with ul>li>a
+        - nav close div>i
+        - nav btns div
+    -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo nav__header-item" id="nav-logo">
+          <!-- <img
+            src="/assets/images/noun-barbell-205616.svg"
+            alt="Barbell by Elizabeth Fuqua from NounProject.com"
+          />
+          Progressive Strength -->
+          <i class="bx bx-square nav__logo-icon"></i> Progressive Strength
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav-color-alt">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav-color-alt">Success Stories</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav-color-alt">How I Can Help</a>
+            </li>
+            <li class="nav__item last-link">
+              <a href="#" class="nav__link nav-color-alt">About Me</a>
+            </li>
+            <!-- <li class="nav__item nav__item-info">
+              <a href="#" class="nav__link nav__link-small"
+                >183 Sunset Drive, San Francisco CA
+              </a>
+            </li>
+            <li class="nav__item nav__item-info">
+              <a href="#" class="nav__link nav__link-small">(800) 153-7227 </a>
+            </li>
+            <li class="nav__item nav__item-info">
+              <a href="#" class="nav__link nav__link-socials"
+                ><i class="bx bxl-instagram"></i>
+              </a>
+              <a href="#" class="nav__link nav__link-socials"
+                ><i class='bx bxl-facebook' ></i></i>
+              </a>
+              <a href="#" class="nav__link nav__link-socials"
+                ><i class="bx bxl-yelp"></i>
+              </a>
+            </li> -->
+          </ul>
+
+          <!-- <button class="button home__button">
+            Schedule a Free Consultation
+          </button> -->
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__btns nav__header-item">
+          <!-- <i class='bx bx-phone nav__callBtn nav__header-item' ></i> -->
+          <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
+          <div class="nav__toggle nav__header-item" id="nav-toggle">
+            <i class="bx bx-menu nav__header-item"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!---------------------- Home ----------------------------->
+
+    <main class="main">
+      <section class="home" id="home">
+        <img
+          src="/assets/images/personal-training-2-progressive-strength-reverse.jpg"
+          class="home__img"
+          alt="Progressive Strength Personal Training"
+        />
+        <div class="overlay"></div>
+        <div class="home__container container grid">
+          <div class="home__socials">
+            <a href="#" target="_blank" class="home__socials-link">
+              Facebook
+            </a>
+            <a href="#" target="_blank" class="home__socials-link">
+              Instagram
+            </a>
+            <a href="#" target="_blank" class="home__socials-link"> Yelp </a>
+          </div>
+          <div class="home__info">
+            <h1 class="home__title">
+              Helping you create an <br />
+              injury-free lifestyle.
+            </h1>
+            <!-- <h1 class="home__title">
+              Building strength in <br />
+              Silcon Valley's Engineers.
+            </h1> -->
+            <p class="home__description">
+              The goal of the Progressive Strength Project is to combine an
+              amazing experience with effective methods for injury prevention.
+            </p>
+            <div class="home__btns">
+              <button class="home__button home__btn">
+                Schedule a Free Session
+              </button>
+            </div>
+            <div class="home__reviews">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <span class="home__reviews-info">25 Yelp Reviews</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ************ add a fixed button for the bottom of the page -->
+
+      <!---------------------- Testimonials ----------------------------->
+
+      <section class="testimonials">
+        <div class="testimonial__container container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__card swiper-slide">
+                <i class="bx bxl-yelp testimonial__icon"></i>
+                <div class="testimonial__info">
+                  <p class="testimonial__text">
+                    "Ken is hands down the most knowledgeable
+                    trainer/nutritionist that I have had. He just completely
+                    changed my perspective of training the smart way."
+                  </p>
+                  <p class="testimonial__name">Anthony P.</p>
+                  <div class="testimonial__link">
+                    <a href="#">Check out the Yelp Reviews</a>
+                    <i class="bx bx-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial__card swiper-slide">
+                <i class="bx bxl-yelp testimonial__icon"></i>
+                <div class="testimonial__info">
+                  <p class="testimonial__text">
+                    "Ken has been the perfect coach where he has modified the
+                    sessions to suit my needs and not just lift weights. I feel
+                    stronger, fitter, and high on energy compared to what I was
+                    before."
+                  </p>
+                  <p class="testimonial__name">Aishvarya S.</p>
+                  <div class="testimonial__link">
+                    <a href="#">Check out the Yelp Reviews</a>
+                    <i class="bx bx-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial__card swiper-slide">
+                <i class="bx bxl-yelp testimonial__icon"></i>
+                <div class="testimonial__info">
+                  <p class="testimonial__text">
+                    "Kenny is committed to helping his clients meet and even
+                    exceed their goals. You can't go wrong. He's the real deal."
+                  </p>
+                  <p class="testimonial__name">Juakita B.</p>
+                  <div class="testimonial__link">
+                    <a href="#">Check out the Yelp Reviews</a>
+                    <i class="bx bx-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial__card swiper-slide">
+                <i class="bx bxl-yelp testimonial__icon"></i>
+                <div class="testimonial__info">
+                  <p class="testimonial__text">
+                    "Kenny has been my trainer for a couple of years. He pays
+                    attention to the correct posture and details on the
+                    workout."
+                  </p>
+                  <p class="testimonial__name">Kyle W.</p>
+                  <div class="testimonial__link">
+                    <a href="#">Check out the Yelp Reviews</a>
+                    <i class="bx bx-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------- Video ----------------------------->
+      <!-- <section class="video__section section">
+        <div class="video__container container">
+          <video src=""></video>
+        </div>
+      </section> -->
+
+      <!---------------------- Benefits ----------------------------->
+
+      <section class="benefits section">
+        <div class="benefits__container container">
+          <div class="benefits__img-grid">
+            <img
+              src="/assets/images/personal-training-4-progressive-strength.JPG"
+              alt=""
+            />
+          </div>
+          <img
+            src="/assets/images/personal-training-4-progressive-strength.JPG"
+            class="benefits__img-desktop"
+            alt=""
+          />
+          <div class="benefits__group">
+            <h2 class="benefits__title">An All Encompassing Approach</h2>
+            <div class="benefit__item">
+              <h3 class="benefit__title">Injury-Specific Training Programs</h3>
+              <p class="benefit__info">
+                Clients are given custom programs designed around their
+                post-physical therapy injury and/or injury-prevention goals.
+              </p>
+            </div>
+            <div class="benefit__item">
+              <h3 class="benefit__title">Hybrid and Buddy Sessions</h3>
+              <p class="benefit__info">
+                Committing can be tough, so both hybrid (virtual/in-person) and
+                buddy sessions are more than welcome.
+              </p>
+            </div>
+            <div class="benefit__item">
+              <h3 class="benefit__title">App Tracking</h3>
+              <p class="benefit__info">
+                Clients will have access to a top-of-the-line application that
+                will help them keep track of their workouts and progress.
+              </p>
+            </div>
+            <div class="benefit__item">
+              <h3 class="benefit__title">Guided Nutrition</h3>
+              <p class="benefit__info">
+                Nutrition is a key component that clients often find difficult.
+                Guided nutrition is offered to help lead you in the right
+                direction.
+              </p>
+            </div>
+            <button class="button home__button benefits__button">
+              Schedule a Free Session
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- Success Stories -------------------------->
+
+      <section class="success" id="success">
+        <section class="quote__section">
+          <div class="quote__container container flex-center">
+            <h1 class="quote-1 quote__one">
+              Join others in a stronger, injury-free life.
+            </h1>
+            <!-- <h2 class="quote-1">Start your pain-free life today.</h2> -->
+            <!-- <h2 class="quote-1">Enter the progressive world of fitness with no judgement.</h2> -->
+          </div>
+        </section>
+        <!-- <h2 class="section__title">Success Stories</h2> -->
+        <div class="success__container">
+          <div class="swiper success-swiper">
+            <div class="swiper-wrapper">
+              <article class="success__card swiper-slide">
+                <span class="success__tag">30lbs</span>
+                <img
+                  src="/assets/images/personal-training-5-progressive-strength.JPG"
+                  alt="Before and after image of a client."
+                />
+              </article>
+              <article class="success__card swiper-slide">
+                <span class="success__tag">14lbs</span>
+                <img
+                  src="/assets/images/personal-training-1-progressive-strength.JPG"
+                  alt="Before and after image of a client."
+                />
+              </article>
+              <article class="success__card swiper-slide">
+                <span class="success__tag">25lbs</span>
+                <img
+                  src="/assets/images/personal-training-7-progressive-strength.JPG"
+                  alt="Before and after image of a client."
+                />
+              </article>
+              <article class="success__card swiper-slide">
+                <span class="success__tag">19lbs</span>
+                <img
+                  src="/assets/images/personal-training-3-progressive-strength.JPG"
+                  alt="Before and after image of a client."
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- Steps -------------------------->
+
+      <section class="steps section" id="steps">
+        <div class="steps__container">
+          <div class="steps__data container">
+            <h2 class="steps__title">How it Works</h2>
+            <p class="steps__description">
+              You can get started towards your injury-free lifestyle in three
+              steps.
+            </p>
+          </div>
+          <div class="swiper steps-swiper">
+            <div class="swiper-wrapper">
+              <article class="steps__card swiper-slide">
+                <div class="step__data">
+                  <h3 class="step__title">Free phone consultation</h3>
+                  <p class="step__info">
+                    First, you'll set up a free consultation via email. During
+                    the consultation, we'll discuss your goals, any past
+                    injuries, and what types of fitness you enjoy.
+                  </p>
+                </div>
+                <img
+                  src="/assets/images/personal-training-8-progressive-strength.JPG"
+                  alt=""
+                  class="step__image"
+                />
+              </article>
+              <article class="steps__card swiper-slide">
+                <div class="step__data">
+                  <h3 class="step__title">Free training session</h3>
+                  <p class="step__info">
+                    After your consultation, you'll get a free training session
+                    and assessment to get a taste of what you would be doing
+                    going forward.
+                  </p>
+                </div>
+                <img
+                  src="/assets/images/personal-training-3-progressive-strength.JPG"
+                  alt=""
+                  class="step__image"
+                />
+              </article>
+              <article class="steps__card swiper-slide last-slide">
+                <div class="step__data">
+                  <h3 class="step__title">Continue your program</h3>
+                  <p class="step__info">
+                    Lastly, you just need to be consistent and keep working
+                    towards your goals. We're in this together and I'll be there
+                    with you every step of the way.
+                  </p>
+                </div>
+                <img
+                  src="/assets/images/personal-training-9-progressive-strength.JPG"
+                  alt=""
+                  class="step__image"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordian 
+          Step 1: Phone Interview 
+          
+          Step 2: Full consultation - with a free hour workout
+            - movement screen
+            - goal setting
+            - nutrition 
+          Step 3: Start your fitness journey
+          Step 3: World-class fitness program
+          Step 4: Check-ins and reevaluations
+        -->
+
+      <section class="quote__section section">
+        <div class="quote__container container quote__two">
+          <h1 class="quote-1">Hit new goals while staying pain free.</h1>
+          <!-- <h2 class="quote-1">Start your pain-free life today.</h2> -->
+          <!-- <h2 class="quote-1">Enter the progressive world of fitness with no judgement.</h2> -->
+          <button class="button home__button quote__button">
+            Start with a Free Session
+          </button>
+        </div>
+      </section>
+
+      <section class="faq section" id="">
+        <div class="faq__img container">
+          <img
+            src="/assets/images/personal-training-1-progressive-strength.JPG"
+            alt=""
+            class="faq__image"
+          />
+        </div>
+        <div class="faq__container container">
+          <h2 class="accordion__title">Find the answers you need</h2>
+
+          <div class="accordion__section">
+            <!-- <div class="accordion__status"></div> -->
+            <div class="accordion__container">
+              <h3 class="accordion__label">
+                How long will it take to see results?
+              </h3>
+              <div class="accordion__content">
+                <p class="accordion__content-text" id="accordion-text">
+                  Results are relative - we'll be making realistic short-term
+                  and long-term goals that will help keep motivation high.
+                  Consistency will yield results in time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__section">
+            <!-- <div class="accordion__status"></div> -->
+            <div class="accordion__container">
+              <h3 class="accordion__label">
+                What type of program should I choose?
+              </h3>
+              <div class="accordion__content">
+                <p class="accordion__content-text" id="accordion-text">
+                  Whatever your life allows with the least amount of resistance.
+                  Virtual and buddy sessions are offered for that exact reason.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__section">
+            <!-- <div class="accordion__status"></div> -->
+            <div class="accordion__container">
+              <h3 class="accordion__label">How do I get started?</h3>
+              <div class="accordion__content">
+                <p class="accordion__content-text" id="accordion-text">
+                  Shoot me an email to set up a free phone consultation where we
+                  can put together a plan for your injury-free life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="footer__container container">
+        <div class="footer__company">
+          <a href="#" class="footer__logo nav__header-item" id="nav-logo">
+            <i class="bx bx-square footer__logo-icon"></i> Progressive Strength
+          </a>
+          <div class="footer__company-details">
+            <p class="footer__address">1214 Apollo Way, Sunnyvale CA, 94085</p>
+            <p class="footer__number">(814) 897-5089</p>
+            <p class="footer__email">consultation@progressivestrength.com</p>
+          </div>
+        </div>
+
+        <span class="footer__copy"
+          >&#169; Progressive Strength. All rigths reserved</span
+        >
+      </div>
+    </footer>
+
+    <!-- 
+      Full consultation and evaluation 
+
+    -->
+    <!--=============== SWIPER JS ===============-->
+    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/main.js"></script>
+  </body>
+</html>
+
+<!-- <section class="testimonials section">
+        <div class="testimonial__container container grid">
+          
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facilis.
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__profile">
+                  <i class='bx bxl-google testimonial__profile-img'></i>
+                  
+
+                  <div class="testimonial__profile-data">
+                    <span class="testimonial__profile-name">Lee Doe</span>
+                    <span class="testimonial__profile-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam recusandae ratione, laborum consequatur consequuntur!
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__profile">
+                  <i class='bx bxl-apple testimonial__profile-img'></i>
+
+
+                  <div class="testimonial__profile-data">
+                    <span class="testimonial__profile-name">Samantha Mey</span>
+                    <span class="testimonial__profile-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aut eos sapiente at alias reprehenderit velit sunt distinctio eligendi fugit, iste vero perferendis dolore expedita!
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__profile">
+                  <i class='bx bxl-facebook testimonial__profile-img'></i>
+
+
+                  <div class="testimonial__profile-data">
+                    <span class="testimonial__profile-name">Raul Zaman</span>
+                    <span class="testimonial__profile-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-next">
+                <i class="bx bx-chevron-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="bx bx-chevron-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->

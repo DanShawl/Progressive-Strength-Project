@@ -112,7 +112,7 @@ button {
 }
 
 p {
-  line-height: 1.2rem;
+  line-height: 1.35rem;
 }
 
 ul {
@@ -410,8 +410,11 @@ Notes:
 }
 
 .home__description {
+  max-width: 600px;
+
   color: var(--home-text-color);
   margin-bottom: var(--mb-2-5);
+  line-height: 1.6rem;
 }
 
 /* .home__btns {
@@ -537,6 +540,10 @@ Notes:
   color: var(--title-color);
 }
 
+.testimonial__text {
+  max-width: 600px;
+}
+
 .testimonial__info {
   display: flex;
   flex-direction: column;
@@ -556,7 +563,7 @@ Notes:
 
 .testimonial__link a,
 .testimonial__link i {
-  color: var(--button-color);
+  color: var(--first-color);
 }
 
 /* 
@@ -762,9 +769,11 @@ Notes:
 }
 
 .step__title {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
-
+.step__info {
+  margin-bottom: 3rem;
+}
 .steps__title {
   font-weight: var(--font-bold);
 }
@@ -893,7 +902,8 @@ footer {
     font-size: 16px;
   }
   .benefit__info {
-    font-size: 14px;
+    /* font-size: 14px; */
+    margin-top: 0.5rem;
   }
   .benefits__img-grid {
     margin-bottom: var(--mb-2-5);
@@ -1043,7 +1053,28 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .home__img {
+    object-position: 20% bottom;
+  }
 
+  .home__container,
+  .nav {
+    margin: 0 8rem;
+  }
+  .steps__container {
+    margin: 0 2rem;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .home__description {
+    font-size: 20px;
+  }
+
+  .benefit__info {
+    max-width: 350px;
+  }
   .benefits__img-desktop {
     max-width: 500px;
   }

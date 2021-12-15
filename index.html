@@ -48,16 +48,23 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link nav-color-alt">Home</a>
+              <a href="#home" class="nav__link nav-color-alt">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav-color-alt">Success Stories</a>
+              <a href="#benefits" class="nav__link nav-color-alt"
+                >How I Can Help</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav-color-alt">How I Can Help</a>
+              <a href="#success" class="nav__link nav-color-alt"
+                >Success Stories</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#steps" class="nav__link nav-color-alt">How to Start</a>
             </li>
             <li class="nav__item last-link">
-              <a href="#" class="nav__link nav-color-alt">About Me</a>
+              <a href="#faq" class="nav__link nav-color-alt">FAQ</a>
             </li>
             <!-- <li class="nav__item nav__item-info">
               <a href="#" class="nav__link nav__link-small"
@@ -109,32 +116,44 @@
         />
         <div class="overlay"></div>
         <div class="home__container container grid">
-          <div class="home__socials">
-            <a href="#" target="_blank" class="home__socials-link">
-              Facebook
-            </a>
-            <a href="#" target="_blank" class="home__socials-link">
-              Instagram
-            </a>
-            <a href="#" target="_blank" class="home__socials-link"> Yelp </a>
-          </div>
           <div class="home__info">
+            <div class="home__socials">
+              <!-- <a href="#" target="_blank" class="home__socials-link">
+                <i class="bx bxl-facebook"></i>
+              </a> -->
+              <a
+                href="https://www.instagram.com/_progressive_strength_kr/"
+                target="_blank"
+                class="home__socials-link"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="https://www.yelp.com/biz/progressive-strength-sunnyvale?osq=progressive+strength"
+                target="_blank"
+                class="home__socials-link"
+              >
+                <i class="bx bxl-yelp"></i>
+              </a>
+            </div>
             <h1 class="home__title">
               Helping you create an <br />
               injury-free lifestyle.
             </h1>
-            <!-- <h1 class="home__title">
-              Building strength in <br />
-              Silcon Valley's Engineers.
-            </h1> -->
+
             <p class="home__description">
               The goal of the Progressive Strength Project is to combine an
               amazing experience with effective methods for injury prevention.
             </p>
             <div class="home__btns">
-              <button class="home__button home__btn">
-                Schedule a Free Session
-              </button>
+              <a
+                href="mailto:danshawl@outlook.com?subject=Free Phone Consultation&body=Hi Ken, I'd like to schedule a time to talk with you!"
+              >
+                <button class="home__button home__btn">
+                  Schedule a Free Session
+                </button>
+              </a>
+              <!-- "mailto:abc@example.com?subject = Feedback&body = Message" -->
             </div>
             <div class="home__reviews">
               <i class="bx bxs-star"></i>
@@ -142,7 +161,7 @@
               <i class="bx bxs-star"></i>
               <i class="bx bxs-star"></i>
               <i class="bx bxs-star"></i>
-              <span class="home__reviews-info">25 Yelp Reviews</span>
+              <span class="home__reviews-info">5 Yelp Reviews</span>
             </div>
           </div>
         </div>
@@ -165,7 +184,11 @@
                   </p>
                   <p class="testimonial__name">Anthony P.</p>
                   <div class="testimonial__link">
-                    <a href="#">Check out the Yelp Reviews</a>
+                    <a
+                      href="https://www.yelp.com/biz/progressive-strength-sunnyvale?osq=progressive+strength"
+                      target="_blank"
+                      >Check out the Yelp Reviews</a
+                    >
                     <i class="bx bx-chevron-right"></i>
                   </div>
                 </div>
@@ -181,7 +204,11 @@
                   </p>
                   <p class="testimonial__name">Aishvarya S.</p>
                   <div class="testimonial__link">
-                    <a href="#">Check out the Yelp Reviews</a>
+                    <a
+                      href="https://www.yelp.com/biz/progressive-strength-sunnyvale?osq=progressive+strength"
+                      target="_blank"
+                      >Check out the Yelp Reviews</a
+                    >
                     <i class="bx bx-chevron-right"></i>
                   </div>
                 </div>
@@ -195,7 +222,11 @@
                   </p>
                   <p class="testimonial__name">Juakita B.</p>
                   <div class="testimonial__link">
-                    <a href="#">Check out the Yelp Reviews</a>
+                    <a
+                      href="https://www.yelp.com/biz/progressive-strength-sunnyvale?osq=progressive+strength"
+                      target="_blank"
+                      >Check out the Yelp Reviews</a
+                    >
                     <i class="bx bx-chevron-right"></i>
                   </div>
                 </div>
@@ -210,7 +241,11 @@
                   </p>
                   <p class="testimonial__name">Kyle W.</p>
                   <div class="testimonial__link">
-                    <a href="#">Check out the Yelp Reviews</a>
+                    <a
+                      href="https://www.yelp.com/biz/progressive-strength-sunnyvale?osq=progressive+strength"
+                      target="_blank"
+                      >Check out the Yelp Reviews</a
+                    >
                     <i class="bx bx-chevron-right"></i>
                   </div>
                 </div>
@@ -229,7 +264,7 @@
 
       <!---------------------- Benefits ----------------------------->
 
-      <section class="benefits section">
+      <section class="benefits section" id="benefits">
         <div class="benefits__container container">
           <div class="benefits__img-grid">
             <img
@@ -273,14 +308,18 @@
                 direction.
               </p>
             </div>
-            <button class="button home__button benefits__button">
-              Schedule a Free Session
-            </button>
+            <a
+              href="mailto:danshawl@outlook.com?subject=Free Phone Consultation&body=Hi Ken, I'd like to schedule a time to talk with you!"
+            >
+              <button class="button home__button benefits__button">
+                Schedule a Free Session
+              </button>
+            </a>
           </div>
         </div>
       </section>
 
-      <!------------------- Success Stories -------------------------->
+      <!------------------- Success Stories -------------------->
 
       <section class="success" id="success">
         <section class="quote__section">
@@ -407,15 +446,17 @@
       <section class="quote__section section">
         <div class="quote__container container quote__two">
           <h1 class="quote-1">Hit new goals while staying pain free.</h1>
-          <!-- <h2 class="quote-1">Start your pain-free life today.</h2> -->
-          <!-- <h2 class="quote-1">Enter the progressive world of fitness with no judgement.</h2> -->
-          <button class="button home__button quote__button">
-            Start with a Free Session
-          </button>
+          <a
+            href="mailto:danshawl@outlook.com?subject=Free Phone Consultation&body=Hi Ken, I'd like to schedule a time to talk with you!"
+          >
+            <button class="button home__button quote__button">
+              Start with a Free Session
+            </button>
+          </a>
         </div>
       </section>
 
-      <section class="faq section" id="">
+      <section class="faq section" id="faq">
         <div class="faq__img container">
           <img
             src="/assets/images/personal-training-1-progressive-strength.JPG"

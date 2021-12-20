@@ -370,7 +370,7 @@ Notes:
   object-fit: cover;
   /* object-fit: cover; */
 
-  object-position: 80% top;
+  object-position: 65% top;
   /* object-position: 20% bottom; */
 }
 
@@ -395,7 +395,7 @@ Notes:
   margin-bottom: 0.6rem;
 }
 .home__socials-link {
-  font-size: var(--large-font-size);
+  font-size: 24px;
   color: var(--home-text-color);
   transition: 0.3s;
   /* margin: 0; */

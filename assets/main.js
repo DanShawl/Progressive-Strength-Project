@@ -66,10 +66,10 @@ let testimonialSwiper = new Swiper('.testimonial-swiper', {
 let successSwiper = new Swiper('.success-swiper', {
   spaceBetween: 20,
   loop: 'true',
-  slidesPerView: 'auto',
+  // slidesPerView: 'auto',
   centeredSlides: 'true',
   // freeMode: 'true',
-
+  slidesPerView: 1.5,
   breakpoints: {
     576: {
       slidesPerView: 2,

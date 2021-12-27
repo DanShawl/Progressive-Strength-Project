@@ -173,34 +173,7 @@ button {
   font-weight: var(--font-bold);
 }
 
-/* .section__title {
-  position: relative;
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-3);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.section__title::before {
-  content: '';
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 67px;
-  height: 1px;
-  background-color: var(--first-color);
-} */
-
 /* ******************** Header / Nav ******************** */
-/* 
-Notes: 
-  - use a media query for max width to move the menu out of the way
-  - z-index high
-  - header + navMenu fixed position
-*/
 
 .header {
   width: 100%;
@@ -209,8 +182,6 @@ Notes:
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /*For animation dark mode*/
-  /* transition: 0.4s; */
 }
 
 .nav {
@@ -350,6 +321,10 @@ Notes:
   color: var(--button-color);
 }
 
+.progressive-strength-logo-black {
+  height: 30px;
+}
+
 /* ******************** Home ******************** */
 
 .home__container {
@@ -379,7 +354,8 @@ Notes:
   top: 0;
   left: 0;
   opacity: 0.7;
-  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)); */
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.479));
   height: 100%;
   width: 100%;
 }

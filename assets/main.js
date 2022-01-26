@@ -36,14 +36,14 @@ const changeHeader = () => {
   if (scrollY >= 50) {
     header.classList.add('change-header');
 
-    navHeaderItem.forEach((item) => item.classList.add('nav-color'));
-    navLink.forEach((link) => link.classList.remove('nav-color-alt'));
-    navLink.forEach((link) => link.classList.add('nav-color'));
+    // navHeaderItem.forEach((item) => item.classList.add('nav-color'));
+    // navLink.forEach((link) => link.classList.remove('nav-color-alt'));
+    // navLink.forEach((link) => link.classList.add('nav-color'));
   } else {
     header.classList.remove('change-header');
-    navHeaderItem.forEach((item) => item.classList.remove('nav-color'));
-    navLink.forEach((link) => link.classList.add('nav-color-alt'));
-    navLink.forEach((link) => link.classList.remove('nav-color'));
+    // navHeaderItem.forEach((item) => item.classList.remove('nav-color'));
+    // navLink.forEach((link) => link.classList.add('nav-color-alt'));
+    // navLink.forEach((link) => link.classList.remove('nav-color'));
   }
 };
 
